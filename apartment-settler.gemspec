@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["david.saitta@gmail.com"]
   spec.summary       = %q{Load the settler configuration on all tenants.}
   spec.description   = %q{Settler support for Apartment.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/d4v1d82/apartment-settler"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
 
-  spec.add_dependency 'apartment', '>= 0.24'
-  spec.add_dependency 'settler', '>= 2.0.0'
+  spec.add_runtime_dependency 'apartment', '~> 0.24'
+  spec.add_runtime_dependency 'settler', '~> 2.0', '>= 2.0.0'
 
 end
